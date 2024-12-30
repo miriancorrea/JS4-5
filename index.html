@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4.5 - Funçoes e eventos</title>
+  
+
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <style>
+        button{
+            margin: 20px;
+            padding: 10 px 20px;
+            cursor: pointer;
+        }
+        
+        input{
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 16px;
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>Saudação Personalizada</h1>
+    <label for="nome">Digite seu nome:</label> <input type="text" id="nome" >
+    <label for="hora">selecione a hora</label>
+    <select id="hora">
+        <option value="">Selecione</option>
+        <option value="8">Manhã (8h)</option>
+        <option value="14">Tarde (14h)</option>
+        <option value="20">Noite (20h)</option>
+    </select>
+    <button onclick="mostraSaudacao()">Mostrar saudação</button>
+    <p id="mensagem"></p>
+
+    <h1>Escolha a cor de fundo ou interaja de outras formas</h1>
+    <button id="redbutton">Vermelho</button>
+    <button id="greenbutton">Verde</button>
+    <button id="bluebutton">Azul</button>
+    <input type="text" id="inputbox" placeholder="Pressionar uma tecla" size="26">
+
+    <script src="script.js"></script>
+</body>
+</html>
